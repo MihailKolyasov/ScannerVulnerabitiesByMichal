@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="image" src="icons/icon.png">
+            
+            <h2 class="title">Vulnerability Scanner by Michal</h2>
+            <p class="title-block">Choose Recursion Depth</p>
+                <select class="select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="0">ALL</option>
+               </select> 
+        </div>
+        <div class="main-block">
+            <div class="header-url">
+            </div>
+            <div class="header-ip">
+            </div>
+        </div>
+        <div class="btns">
+            <button id="subdomain" class="double-border-button">Search subdomains</button>
+            <button id="xss" class="double-border-button">Test XSS</button>
+            <button id="sql" class="double-border-button">Test SQL</button>
+            <button id="ssrf" class="double-border-button">Test SSRF</button>
+        </div>
+        <div class="result-test">
+            <div class="list-subdomains">
+                <p class="title-block">List subdomains current URL:</p>
+            </div>
+            <div class="xss-block">
+                <h4 class="title-exploit">Cross-Site Scripting </h4>
+            </div>
+            <div class="sql-block">
+                <h4 class="title-exploit">SQLi</h4>
+            </div>
+            <div class="ssrf-block">
+                <h4 class="title-exploit">Server-Side Request Forgery</h4>
+            </div>
+        </div>
+    </div>
+    <script src="send.js"></script>
+</body>
+</html>
